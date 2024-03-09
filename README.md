@@ -2,11 +2,11 @@
 
 Overview: A summary view showing the total number of PV units, total power output, the number of units online/offline, and more...
 
-![Overview](https://res.cloudinary.com/dzxbbqq4l/image/upload/v1691685336/Screenshot_87_ywexxa.png)
+![Overview](https://res.cloudinary.com/dzxbbqq4l/image/upload/v1709949867/Screenshot_126_fhlpt0.png)
 
 Detailed View: A list or grid view of all PV units with detailed information as provided in the dataset.
 
-![Detailed View](https://res.cloudinary.com/dzxbbqq4l/image/upload/v1691739142/Screenshot_88_gx9fkf.png)
+![Detailed View](https://res.cloudinary.com/dzxbbqq4l/image/upload/v1709949868/Screenshot_127_pkqsiu.png)
 
 ## Technical:
 

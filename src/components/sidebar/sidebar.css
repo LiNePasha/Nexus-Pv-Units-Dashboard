@@ -1,0 +1,149 @@
+svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    margin-right: 10px;
+}
+
+.hide {
+    display: none;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 996;
+    background-color: #fff;
+    transition: all 0.3s;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+  }
+
+  @media (max-width: 1199px) {
+    .sidebar {
+      left: -300px;
+    }
+  }
+
+  .sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aab7cf;
+  }
+
+  @media (min-width: 1200px) {
+    #main,
+    #footer {
+        margin-left: 300px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .toggle-sidebar .sidebar {
+        left: 0;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer {
+        margin-left: 0;
+    }
+
+    .toggle-sidebar .sidebar {
+        left: -300px;
+    }
+  }
+
+  .sidebar-nav, .sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .sidebar-nav .nav-item {
+    margin-bottom: 5px;
+  }
+
+  .sidebar-nav .nav-heading {
+    text-transform: uppercase;
+    color: var(--textColor);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 5px 15px;
+  }
+
+  .sidebar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600px;
+    color: var(--primaryColor);
+    transition: 0.3;
+    padding: 25px 15px;
+    border-radius: 4px;
+  }
+
+  .sidebar-nav .nav-link i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: var(--primaryColor);
+  }
+
+  .sidebar-nav .nav-link.collapsed i {
+    color: #899bbd;
+  }
+
+  .sidebar-nav .nav-link:hover {
+    color: red;
+    background-color: #f6f9ff;
+  }
+
+  .sidebar-nav .nav-link:hover i {
+    color: red;
+  }
+
+  .sidebar-nav .nav-link:not(.collapsed) svg.dropdownSvg {
+    display: none;
+  }
+
+  .sidebar-nav .nav-content {
+    padding: 5px 0 0 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .sidebar-nav .nav-content a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primaryColor);
+    transition: 0.3s;
+    padding: 10px 0 10px 40px;
+  }
+
+  .sidebar-nav .nav-content a i {
+    font-size: 6px;
+    margin-right: 8px;
+    line-height: 0;
+    border-radius: 50%;
+  }
+
+    .sidebar-nav .nav-content a:hover,
+    .sidebar-nav .nav-content a.active {
+        color: red;
+    }
+
+    .sidebar-nav .nav-content a.active i {
+        background-color: red;
+    }
+
+
+
